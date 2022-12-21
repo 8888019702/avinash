@@ -14,9 +14,13 @@ pipeline{
 								}
 						stage('stage-2'){
 								steps{
-								
 									sh "systemctl start httpd"
 									}
 								}
-							}
+					stage('stage-3'){
+						steps{
+							sleep 20
 						}
+					}
+				}
+}
