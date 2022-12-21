@@ -14,7 +14,7 @@ pipeline{
 								}
 						stage('stage-2'){
 								steps{
-									sh "yum install httpd -y"
+								
 									sh "systemctl start httpd"
 									}
 								}
